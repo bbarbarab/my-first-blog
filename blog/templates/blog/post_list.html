@@ -7,8 +7,6 @@
         <header>
             <h1><a href="/">Django Girls Blog</a></h1>
         </header>
-        <h1>SONO QUI</h1>
-        {% comment %}
         {% for post in posts %}
             <article>
                 <time>published: {{ post.published_date }}</time>
@@ -16,8 +14,5 @@
                 <p>{{ post.text|linebreaksbr }}</p>
             </article>
         {% endfor %}
-        {% endcomment %}
-
-        
     </body>
 </html>
